@@ -1,0 +1,64 @@
+[ec2-user@ip-10-1-11-80 ~]$ mysql -h ud1-primary.csqmtxd1to7r.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 22
+Server version: 8.0.20 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| udacity            |
++--------------------+
+4 rows in set (0.00 sec)
+
+MySQL [(none)]> use udacity;
+Database changed
+MySQL [udacity]> CREATE TABLE shop (
+    ->     article INT UNSIGNED  DEFAULT '0000' NOT NULL,
+    ->     dealer  CHAR(20)      DEFAULT ''     NOT NULL,
+    ->     price   DECIMAL(16,2) DEFAULT '0.00' NOT NULL,
+    ->     PRIMARY KEY(article, dealer));
+Query OK, 0 rows affected (0.10 sec)
+
+MySQL [udacity]> show tables;
++-------------------+
+| Tables_in_udacity |
++-------------------+
+| shop              |
++-------------------+
+1 row in set (0.00 sec)
+
+MySQL [udacity]> SELECT * from shop;
+Empty set (0.00 sec)
+
+MySQL [udacity]> INSERT INTO shop VALUES
+    ->     (1,'A',3.45),(1,'B',3.99),(2,'A',10.99),(3,'B',1.45),
+    ->     (3,'C',1.69),(3,'D',1.25),(4,'D',19.95);
+Query OK, 7 rows affected (0.01 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+MySQL [udacity]> SELECT * from shop;
++---------+--------+-------+
+| article | dealer | price |
++---------+--------+-------+
+|       1 | A      |  3.45 |
+|       1 | B      |  3.99 |
+|       2 | A      | 10.99 |
+|       3 | B      |  1.45 |
+|       3 | C      |  1.69 |
+|       3 | D      |  1.25 |
+|       4 | D      | 19.95 |
++---------+--------+-------+
+7 rows in set (0.00 sec)
+
+MySQL [udacity]> exit
+Bye
+[ec2-user@ip-10-1-11-80 ~]$

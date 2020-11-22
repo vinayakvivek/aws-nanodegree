@@ -1,0 +1,22 @@
+[
+  {
+    "ParameterKey": "VpcName",
+    "ParameterValue": "UD1-Test"
+  },
+  {
+    "ParameterKey": "DBInstanceIdentifier",
+    "ParameterValue": "ud1-test"
+  },
+  {
+    "ParameterKey": "DBInstanceName",
+    "ParameterValue": "ud1-test"
+  },
+  {
+    "ParameterKey": "DBUserName",
+    "ParameterValue": "admin"
+  },
+  {
+    "ParameterKey": "DBPassword",
+    "ParameterValue": "***"
+  }
+]

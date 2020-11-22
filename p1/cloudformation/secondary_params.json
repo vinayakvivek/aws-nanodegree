@@ -1,0 +1,18 @@
+[
+  {
+    "ParameterKey": "VpcName",
+    "ParameterValue": "UD1-Test-standby"
+  },
+  {
+    "ParameterKey": "DBInstanceName",
+    "ParameterValue": "ud1-test-read"
+  },
+  {
+    "ParameterKey": "SourceDBInstanceIdentifier",
+    "ParameterValue": "arn:aws:rds:us-west-1:558010666863:db:ud1-test"
+  },
+  {
+    "ParameterKey": "SourceRegion",
+    "ParameterValue": "us-west-1"
+  }
+]
