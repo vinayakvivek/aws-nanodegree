@@ -1,0 +1,17 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),One main DB and a read replica,Amazon RDS for PostgreSQL,0,3507.92,42095.04,USD,"Quantity (2), Pricing strategy (On-Demand Instances), Storage volume (General Purpose SSD (gp2)), Storage amount (2 TB per month), Additional backup storage (5 TB)"
+My Estimate,US East (N. Virginia),Web servers and App servers,Amazon EC2,0,3109.44,37313.28,USD,"Operating system (Linux), Quantity (12), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (m5a.2xlarge)"
+My Estimate,US East (N. Virginia),Two load balancers,Application Load Balancer,0,79.57,954.84,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),Two NAT gateways (one in each public subnet),Amazon Virtual Private Cloud (VPC),0,1448.1,17377.20,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,2201.51,26418.12,USD,"DT Inbound: Internet (20 TB per month), DT Outbound: Internet (20 TB per month), DT Intra-Region: (20 TB per month)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,540.82,6489.84,USD,S3 Standard storage (10 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,"DT Inbound: Internet (1 TB per month), DT Outbound: Amazon CloudFront (20 TB per month)"
+My Estimate,Asia Pacific (Mumbai),,Amazon Virtual Private Cloud (VPC),0,2399.1227,28789.47,USD,"DT Inbound: Internet (20 TB per month), DT Outbound: Internet (20 TB per month), DT Intra-Region: (20 TB per month), Data transfer cost (2399.1227)"
+My Estimate,Asia Pacific (Mumbai),Read replica in secondary region,Amazon RDS for PostgreSQL,0,2500.496,30005.95,USD,"Quantity (1), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage volume (General Purpose SSD (gp2)), Storage amount (2 TB per month), Instance type (db.m5.2xlarge), Additional backup storage (5 TB)"
+My Estimate,Asia Pacific (Mumbai),Two NAT gateways (one in each public subnet),Amazon Virtual Private Cloud (VPC),0,1802.08,21624.96,USD,Number of NAT Gateways (2)
+My Estimate,Asia Pacific (Mumbai),Web servers and App servers,Amazon EC2,0,2081.52,24978.24,USD,"Operating system (Linux), Quantity (12), Pricing strategy (On-Demand Instances 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (m5a.2xlarge)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
