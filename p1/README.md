@@ -1,4 +1,4 @@
-# Project: Recoverability In AWS
+# Project 1: Recoverability In AWS
 
 - Selected regions
   - Primary: `us-east-1`
