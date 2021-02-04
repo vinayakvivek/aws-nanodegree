@@ -1,11 +1,10 @@
-- S3 server side encryption not enabled (https://console.aws.amazon.com/config/home?awsc-custsat-override=promptUser&region=us-east-1#/resources/details?resourceId=cand-c3-free-recipes-558010666863&resourceName=cand-c3-free-recipes-558010666863&resourceType=AWS%3A%3AS3%3A%3ABucket)
+- S3 server side encryption not enabled
 - S3 bucket logging not enabled
 
-- Should use SSM to manage EC2 instances (https://console.aws.amazon.com/config/home?awsc-custsat-override=promptUser&region=us-east-1#/resources/details?resourceId=i-02667f98eef5aadeb&resourceType=AWS%3A%3AEC2%3A%3AInstance)
+- Should use SSM to manage EC2 instances
 
-- Load balancer, http to https redirection not enabled (https://console.aws.amazon.com/config/home?awsc-custsat-override=promptUser&region=us-east-1#/resources/details?resourceId=arn%3Aaws%3Aelasticloadbalancing%3Aus-east-1%3A558010666863%3Aloadbalancer%2Fapp%2Fc1-web-service-alb%2F2dba6119ed77dfae&resourceName=c1-web-service-alb&resourceType=AWS%3A%3AElasticLoadBalancingV2%3A%3ALoadBalancer)
+- http to https redirection not enabled in ELB
 - ELB logging not enabled
 
-- Web app SG should not allow SSH from all sources (https://console.aws.amazon.com/config/home?awsc-custsat-override=promptUser&region=us-east-1#/resources/details?resourceId=sg-0b478d64a46302875&resourceName=WebAppSG&resourceType=AWS%3A%3AEC2%3A%3ASecurityGroup)
-
+- Web app SG should not allow SSH from all sources
 - VPC default SG should be closed
