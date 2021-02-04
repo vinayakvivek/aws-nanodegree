@@ -1,0 +1,9 @@
+1. To reduce internet facing attack surface,
+  - Move web service EC2 instance into the private subnet
+  - Redirect http requests to https in ALB
+
+2. Not fully. Someone who has access to the attack instance can still access those S3 buckets
+
+3. No, encryption will be applied to new uploads only. To encrypt existing files, they must be re-uploaded.
+
+4. All the manual changes would be reset.

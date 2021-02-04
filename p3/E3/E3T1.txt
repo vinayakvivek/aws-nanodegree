@@ -1,0 +1,9 @@
+# Findings detected
+  - UnauthorizedAccess:EC2/SSHBruteForce
+  - Two findings
+    1. Attack Instance is performing SSH brute force attacks against Web Service Instance
+    2. Web Service Instance is under attack
+
+# AWS Guard Duty's source of information
+  - Guard Duty performs scanning on network traffic
+  - SSH bruteforce attacks are found by scanning traffic in and out of port 22.

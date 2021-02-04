@@ -1,0 +1,16 @@
+# Poor practice 1
+InstanceProfileRole: Policy associated with c3-app-InstanceRole violates Least Privilege Access
+  - allows full access to all S3 buckets.
+  - should allow access to only the S3 bucket: cand-c3-free-recipes-****, and not any other S3 buckets including cand-c3-secret-recipes-****
+
+# Poor practice 2
+WebAppSG: Inbound rules are too open
+  - It should allow requests coming from the ALB only.
+  - Should not allow direct SSH to the web app server
+    - Use AWS system manager if necessary
+
+# Poor practice 3
+RecipeWebServiceInstance: Does not reside in a private subnet even though the server is places behind an ALB
+
+# Poor practice 4
+S3BucketRecipesSecret: No server side encryption, anyone with access to account would be able to read the data
